@@ -1,0 +1,17 @@
+.avatar {
+	width: 100px;
+}
+.title{
+	margin: 10px;
+}
+form{
+	width: 500px;
+}
+@media screen and (max-width: 1000px){
+	form{
+		width: 250px;
+    }
+    img{
+		width: 400px;
+	}
+}

@@ -12,7 +12,7 @@ import { About } from './views/about/About';
 const App = () => (
   <Router>
     <Switch>
-      <Route path="/login" component = {Login} />
+      <Route path="/" component = {Login} />
       <Route  path="/about" component = {About} />
        <Dashboard>
        <Route component={({ match }) =>
@@ -21,10 +21,8 @@ const App = () => (
           </div>
         }/>
        </Dashboard>
+       <Redirect from='*' to='/usuario' />
     </Switch>
-    <Redirect from='*' to='/login' />
-
 </Router>
-
 );
 export default App;

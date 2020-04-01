@@ -3,17 +3,14 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Redirect,
 } from "react-router-dom";
 import Login from './views/login/Login';
 import { Dashboard } from './views/dashboard/Dashboard';
 import { User } from './views/user/User';
-import { About } from './views/about/About';
 const App = () => (
   <Router>
     <Switch>
-      <Route path="/login" component = {Login} />
-      <Route  path="/about" component = {About} />
+      <Route path="/" component = {Login} />
        <Dashboard>
        <Route component={({ match }) =>
           <div>
@@ -22,9 +19,6 @@ const App = () => (
         }/>
        </Dashboard>
     </Switch>
-    <Redirect from='*' to='/login' />
-
 </Router>
-
 );
 export default App;

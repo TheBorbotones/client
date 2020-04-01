@@ -1,0 +1,14 @@
+img{
+	width: 500px;
+}
+form{
+	width: 500px;
+}
+@media screen and (max-width: 1000px){
+	form{
+		width: 250px;
+    }
+    img{
+		width: 400px;
+	}
+}

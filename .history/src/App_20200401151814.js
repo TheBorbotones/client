@@ -21,10 +21,8 @@ const App = () => (
           </div>
         }/>
        </Dashboard>
+       <Redirect from='*' to='/login' />
     </Switch>
-    <Redirect from='*' to='/login' />
-
 </Router>
-
 );
 export default App;

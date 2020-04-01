@@ -3,7 +3,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Redirect,
 } from "react-router-dom";
 import Login from './views/login/Login';
 import { Dashboard } from './views/dashboard/Dashboard';
@@ -22,9 +21,6 @@ const App = () => (
         }/>
        </Dashboard>
     </Switch>
-    <Redirect from='*' to='/login' />
-
 </Router>
-
 );
 export default App;
